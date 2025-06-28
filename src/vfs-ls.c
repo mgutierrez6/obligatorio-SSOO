@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <string.h>
+#include <time.h>
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
@@ -28,7 +29,7 @@ int main(int argc, char *argv[]) {
         return EXIT_FAILURE;
     }
 
-    printf("Total %u\n", root_inode.blocks);
+    printf("Inodo Perms     Usuario    Grupo     Tamaño Bloques     Creación           Acceso             Modificación       Nombre\n");
     
     // Recorrer todos los bloques del directorio
     for (uint16_t i = 0; i < root_inode.blocks; i++) {

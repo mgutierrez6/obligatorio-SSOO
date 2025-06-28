@@ -81,7 +81,7 @@ int main(int argc, char *argv[]) {
     qsort(entries, entry_count, sizeof(dir_entry_info), compare_entries);
 
     // Mostrar entradas ordenadas
-    printf("Total %u\n", root_inode.blocks);
+    printf("Inodo Perms     Usuario    Grupo     Tamaño Bloques     Creación           Acceso             Modificación       Nombre\n");
     for (int i = 0; i < entry_count; i++) {
         print_inode(&entries[i].in, entries[i].inode, entries[i].name);
     }
