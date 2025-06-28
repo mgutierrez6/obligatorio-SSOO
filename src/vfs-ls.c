@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <errno.h>
 #include <string.h>
-#include <time.h>
 
 int main(int argc, char *argv[]) {
     if (argc != 2) {
